@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seatwork 2</title>
+
+<!-- BS SETUP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!-- JS SETUP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- CSS SETUP -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container text-center mt-5">
+    <img src="for ict xD.jpg" alt="Nene" class="img-fluid mb-3" style="max-width: 200px; border-radius: 10px;">
+    <h1>ʜɪ, ᴍʏ ɴᴀᴍᴇ ɪꜱ ɴᴇɴᴇ! ʟᴇᴛ'ꜱ ᴛᴇꜱᴛ ʏᴏᴜʀ ᴍᴀᴛʜ ꜱᴋɪʟʟꜱ!</h1>
+    <p>˗ˏˋ ★ ᴇɴᴛᴇʀ ᴛᴡᴏ ɴᴜᴍʙᴇʀꜱ ʙᴇʟᴏᴡ ᴀɴᴅ ꜱᴇʟᴇᴄᴛ ᴀɴ ᴏᴘᴇʀᴀᴛɪᴏɴ.★ ˎˊ˗</p>
+
+    <div class="card p-4">
+        <label>✧ ᴇɴᴛᴇʀ ᴀ ᴠᴀʟᴜᴇ ꜰᴏʀ ᴀ:</label>
+        <input type="number" id="numA" class="form-control mb-3" placeholder="Enter a number">
+
+        <label>✧ ᴇɴᴛᴇʀ ᴀ ᴠᴀʟᴜᴇ ꜰᴏʀ ʙ:</label>
+        <input type="number" id="numB" class="form-control mb-3" placeholder="Enter a number">
+
+        <button class="btn btn-success mb-2" onclick="product()">𝐏𝐫𝐨𝐝𝐮𝐜𝐭 𝐨𝐟 𝐀 𝐚𝐧𝐝 𝐁 ˚꩜ˎˊ˗</button>
+        <button class="btn btn-success mb-2" onclick="power()">𝐀 𝐫𝐚𝐢𝐬𝐞𝐝 𝐭𝐨 𝐁 ˚꩜ˎˊ˗</button>
+        <button class="btn btn-success mb-2" onclick="exponentiate()">𝐆𝐞𝐭 𝐭𝐡𝐞 𝐫𝐞𝐦𝐚𝐢𝐧𝐝𝐞𝐫 ˚꩜ˎˊ˗</button>
+        <button class="btn btn-success mb-2" onclick="isEqual()">𝐂𝐡𝐞𝐜𝐤 𝐢𝐟 𝐚 𝐢𝐬 𝐞𝐪𝐮𝐚𝐥 𝐭𝐨 𝐛 ˚꩜ˎˊ˗</button>
+    </div>
+    
+    <h3 class="mt-4" id="result"></h3>
+</div>
+<script>
+    function product() {
+        let a = document.getElementById("numA").value;
+        let b = document.getElementById("numB").value;
+        
+        document.getElementById("result").innerHTML = "Product: " + (a * b);
+    }
+
+    function power() {
+        let a = document.getElementById("numA").value;
+        let b = document.getElementById("numB").value;
+        
+        document.getElementById("result").innerHTML = "Result: " + Math.pow(a, b);
+    }
+
+    function exponentiate() {
+        let a = document.getElementById("numA").value;
+        let b = document.getElementById("numB").value;
+        
+        document.getElementById("result").innerHTML = "Remainder: " + (a % b);
+    }
+
+    function isEqual() {
+        let a = document.getElementById("numA").value;
+        let b = document.getElementById("numB").value;
+        
+        document.getElementById("result").innerHTML = a === b ? "a is equal to b" : "a is NOT equal to b";
+    }
+</script>
+<br>
+<div class="footer">
+        <h3><a href="https://jbaring-9r.github.io/Q2EX2/">ᴊᴀɪʏᴀɴᴀʜ ʀᴀᴇ ᴘ. ʙᴀʀɪɴɢ | ɢʀᴀᴅᴇ 9 - ʀᴜʙʏ ♡🍰໒</a><h3>
+</div>
+
+</body>
+</html>
